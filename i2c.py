@@ -19,18 +19,17 @@ try:
 		light = (ch0 - ch1)
 		light = random.randint(0,1500)
 		if (light<=50):
-			print("Light is below 50. It is too dark")
+			print("Distance is below 50. It is too close")
 
 		elif (light<=100):
-			print("Light is 100 or below. It is dark")
+			print("Distance is 100 or below. It is close")
 				
 		elif (light<=400):
-			print("Light is 400 or below. It is medium")
+			print("Distance is 400 or below. It is okay")
 
 		elif (light<=1200):
-			print("Light is 1200 or below. It is bright")
-				
+			print("Distance is 1200 or below. It is far")
 		else: 
-			print("Light is above 1200. It is too bright")
+			print("Distance is above 1200. It is too far away")
 except KeyboardInterrupt:
     GPIO.cleanup()
